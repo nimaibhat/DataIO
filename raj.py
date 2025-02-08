@@ -39,9 +39,9 @@ print("Confusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 
 # Run the test on the specific input sample: 58, 2, 21, 8, 42
-sample_input = np.array([[58, 2, 21, 8, 42]])
+sample_input = np.array([[106, 3, 64, 2, 160]])
 sample_prediction = base_model.predict(sample_input)
-print("For the test input [58, 2, 21, 8, 42], the predicted category is:", sample_prediction)
+print("For the test input [106 3, 64, 2, 160], the predicted category is:", sample_prediction)
 
 # Optionally, compute and display a correlation matrix for the features and encoded target
 df_numeric = df.copy()
